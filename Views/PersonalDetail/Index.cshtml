@@ -1,0 +1,99 @@
+﻿@model MNJ_CRUD_OPERATION_FINAL.Models.EmployeeModel;
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<div class="out-container">
+    <form asp-action="AddEmployee" asp-controller="PersonalDetail" method="post">
+        <div id="personalDetailSection">
+            <div class="row g-3">
+                <h4>Personal Details Section</h4>
+
+                <div class="col-md-6">
+                    <label for="inputName" class="form-label">Name (As in Passport)</label>
+                    <input type="text" class="form-control" id="inputName" asp-for="EmployeeName" />
+                    <span class="text-danger" asp-validation-for="EmployeeName"></span>
+                </div>
+
+                <div class="col-md-6">
+                    <label for="inputDepartment" class="form-label">Employee Department</label>
+                    <input type="text" class="form-control" id="inputDepartment" asp-for="EmployeeDepartment" />
+                    <span class="text-danger" asp-validation-for="EmployeeDepartment"></span>
+                </div>
+
+                <div class="col-md-6">
+                    <label for="inputSalary" class="form-label">Employee Salary</label>
+                    <input type="text" class="form-control" id="inputSalary" asp-for="EmployeeSalary" />
+                    <span class="text-danger" asp-validation-for="EmployeeSalary"></span>
+                </div>
+
+                <div class="col-md-6">
+                    <label for="inputSalary" class="form-label">Father Name</label>
+                    <input type="text" class="form-control" id="inputSalary" asp-for="FatherName" />
+                    <span class="text-danger" asp-validation-for="FatherName"></span>
+                </div>
+
+                <div class="col-md-6">
+                    <label for="inputSalary" class="form-label">Nationality</label>
+                    <input type="text" class="form-control" id="inputSalary" asp-for="Nationality" />
+                    <span class="text-danger" asp-validation-for="Nationality"></span>
+                </div>
+
+                <div class="col-md-6">
+                    <label for="inputSalary" class="form-label">Social Security Number</label>
+                    <input type="text" class="form-control" id="inputSalary" asp-for="Social_Security_Number" />
+
+                </div>
+
+                <div class="col-md-6">
+                    <label for="inputSalary" class="form-label">Sex</label>
+                    <input type="text" class="form-control" id="inputSalary" asp-for="sex" />
+                    <span class="text-danger" asp-validation-for="sex"></span>
+                </div>
+
+                <div class="col-md-6">
+                    <label for="inputSalary" class="form-label">Martial Status</label>
+                    <input type="text" class="form-control" id="inputSalary" asp-for="Martial_Status" />
+                    <span class="text-danger" asp-validation-for="Martial_Status"></span>
+                </div>
+
+                <div class="col-md-6">
+                    <label for="inputSalary" class="form-label">Pan Card Number</label>
+                    <input type="text" class="form-control" id="inputSalary" asp-for="Pan_card_number" />
+                    <span class="text-danger" asp-validation-for="Pan_card_number"></span>
+                </div>
+
+
+
+                <div class="col-md-6">
+                    <label for="inputSalary" class="form-label">Date of Birth</label>
+                    <input type="text" class="form-control" id="inputSalary" asp-for="Date_of_Birth" />
+                    <span class="text-danger" asp-validation-for="Date_of_Birth"></span>
+                </div>
+
+                <div class="col-md-6">
+                    <label for="inputSalary" class="form-label">Martial Status</label>
+                    <input type="text" class="form-control" id="inputSalary" asp-for="Nationality_2" />
+                    <span class="text-danger" asp-validation-for="Nationality_2"></span>
+                </div>
+
+                <div class="col-md-6">
+                    <label for="inputSalary" class="form-label">Place of Birth</label>
+                    <input type="text" class="form-control" id="inputSalary" asp-for="Place_of_Birth" />
+                    <span class="text-danger" asp-validation-for="Place_of_Birth"></span>
+                </div>
+
+
+                <!-- Hidden field for Id -->
+                <input type="hidden" asp-for="Id" />
+            </div>
+
+            <div class="d-grid mt-2">
+                <input type="submit" class="btn btn-block btn-primary mb-2" value="Save" />
+            </div>
+        </div>
+    </form>
+</div>
+
+

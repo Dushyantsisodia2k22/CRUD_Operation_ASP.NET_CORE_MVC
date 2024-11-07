@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\MNJ_CRUD_OPERATION_FINAL.props" />
+</Project>
